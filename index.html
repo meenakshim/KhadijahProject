@@ -5,85 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Khadijah Project | Help Afghan Women</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: 'Arial', sans-serif;
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
+        body {
+            line-height: 1.6;
+            background-color: #f9f9f9;
             color: #333;
         }
-        .quote {
-            font-size: 1.2em;
-            font-style: italic;
-            color: #2a9d8f;
+        header {
+            height: 100vh;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
         }
-        .content {
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .cta-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #e63946;
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-btn:hover {
+            background-color: #d62828;
+        }
+
+        .content-section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .content-section h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .content-section .content {
+            max-width: 800px;
+            margin: 0 auto;
             text-align: left;
-            margin-top: 20px;
         }
-        .content p {
-            font-size: 1.1em;
-            color: #555;
-            line-height: 1.6;
+        .content-section .content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.8;
         }
         .highlight-red {
             color: red;
             font-weight: bold;
         }
-        .cta {
-            margin-top: 30px;
-        }
-        .cta a {
-            background-color: #e63946;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-size: 1.2em;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .cta a:hover {
-            background-color: #d62828;
-        }
+
         footer {
-            margin-top: 40px;
-            color: #777;
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        footer p {
+            font-size: 1rem;
+            color: #bbb;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+            header p {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>The Khadijah Project</h1>
-    <h2>Why Does Afghanistan Need Our Urgent Attention?</h2>
-    <p class="quote">"The measure of any society is how it treats its women and girls" <br> — Michelle Obama</p>
+    <!-- Header Section with Hero Image -->
+    <header>
+        <div>
+            <h1>The Khadijah Project</h1>
+            <p>"The measure of any society is how it treats its women and girls" — Michelle Obama</p>
+            <a href="#donate" class="cta-btn">Donate Now</a>
+        </div>
+    </header>
 
-    <div class="content">
-        <p>Afghanistan is ranked <span class="highlight-red">170 out of 170</span> countries in the world on the global Women, Peace & Security index.</p>
-        <p><span class="highlight-red">100% of women-headed households</span> have insufficient food.</p>
-        <p>Maternal mortality, infant mortality, female suicide rates, and early marriage incidence have all increased.</p>
-        <p>Steep economic decline combined with the fact that girls are banned from attending school beyond puberty.</p>
-        <p>Many families are compelled to <span class="highlight-red">sell</span> their daughters at earlier and earlier ages.</p>
-        <p>More than <span class="highlight-red">30% of Afghan girls</span> are married <span class="highlight-red">before they turn 18!</span></p>
-        <p>The most recent Taliban edict forces all women to cover their faces — and to not speak or have their voices heard in public.</p>
-    </div>
+    <!-- Main Content Section -->
+    <section class="content-section">
+        <h2>Why Does Afghanistan Need Our Urgent Attention?</h2>
+        <div class="content">
+            <p>Afghanistan is ranked <span class="highlight-red">170 out of 170</span> countries in the world on the global Women, Peace & Security index.</p>
+            <p><span class="highlight-red">100% of women-headed households</span> have insufficient food.</p>
+            <p>Maternal mortality, infant mortality, female suicide rates, and early marriage incidence have all increased.</p>
+            <p>Steep economic decline combined with the fact that girls are banned from attending school beyond puberty.</p>
+            <p>Many families are compelled to <span class="highlight-red">sell</span> their daughters at earlier and earlier ages.</p>
+            <p>More than <span class="highlight-red">30% of Afghan girls</span> are married <span class="highlight-red">before they turn 18!</span></p>
+            <p>The most recent Taliban edict forces all women to cover their faces — and to not speak or have their voices heard in public.</p>
+        </div>
+    </section>
 
-    <div class="cta">
-        <a href="#donate">Donate Now</a>
-    </div>
-
+    <!-- Footer Section -->
     <footer>
         <p>Help make a difference in the lives of Afghan women and girls. Your contribution matters.</p>
     </footer>
-</div>
 
 </body>
 </html>
